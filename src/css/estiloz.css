@@ -1,3 +1,87 @@
 .carrucel img {
     height: 150px !important;
 }
+
+.texto2 {
+    text-align: justify !important;
+}
+
+#icono {
+    max-width: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Hace que el desplazamiento (scroll) sea suave */
+}
+
+body {
+    margin: 0;
+    /* Quita los márgenes por defecto del navegador */
+    padding: 0;
+    /* Quita el relleno por defecto */
+    height: 100%;
+    /* Hace que el body ocupe toda la altura de la pantalla */
+    font-family: Arial, sans-serif;
+    /* Fuente general de la página */
+    /* overflow: hidden; */
+    /* Bloquea el desplazamiento mientras se muestra el loading */
+}
+
+
+/* ==========================================
+       🔹 SECCIÓN: LOADER (pantalla de carga)
+       ========================================== */
+
+#loader {
+    position: fixed;
+    /* Fija el loader sobre toda la pantalla */
+    width: 100%;
+    /* Ocupa todo el ancho de la ventana */
+    height: 100%;
+    /* Ocupa toda la altura de la ventana */
+    background-color: #111;
+    /* Fondo negro oscuro */
+    color: white;
+    /* Texto blanco */
+    display: flex;
+    /* Usamos Flexbox para centrar su contenido */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    flex-direction: column;
+    /* Ordena el spinner y el texto en columna */
+    z-index: 9999;
+    /* Se asegura de estar por encima de todo el contenido */
+    transition: opacity 0.5s ease, /* Suaviza la desaparición */
+    visibility 0.5s ease;
+}
+
+
+/* Spinner circular animado */
+
+.spinner {
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    /* Borde semitransparente (círculo base) */
+    border-top: 6px solid #00bcd4;
+    /* Parte superior coloreada (crea el efecto al girar) */
+    border-radius: 50%;
+    /* Hace que el borde sea completamente circular */
+    width: 60px;
+    /* Tamaño del spinner (ancho) */
+    height: 60px;
+    /* Tamaño del spinner (alto) */
+    animation: spin 1s linear infinite;
+    /* Aplica animación continua de giro */
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+    /* Gira 360 grados en cada ciclo */
+}
+
+
+/* Animación que hace girar el spinner */

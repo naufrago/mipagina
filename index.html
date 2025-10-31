@@ -2,23 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./src/css/estiloz.css">
+    <link rel="stylesheet" href="./src/css/estiloz.css" />
+    <script src="https://kit.fontawesome.com/36351a33a3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./src/img/homero.webp" type="image/x-icon">
 </head>
 
 <body>
+    <!-- ==========================================
+       🔹 SECCIÓN: LOADER (pantalla de carga)
+       ========================================== -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- aca inicia navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="./src/img/logo.png" alt="" height="50">
+                <img src="./src/img/logo.png" alt="" height="50" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -27,71 +38,208 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            productos
-          </a>
+                            productos
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="p1.html">p1</a></li>
                             <li><a class="dropdown-item" href="p2.html">p2</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <hr class="dropdown-divider" />
                             </li>
                             <li><a class="dropdown-item" href="p3.html">los demas </a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " target="_blank" aria-current="page" href="https://iescinoc.edu.co/">ies cinoc</a>
+                        <a class="nav-link" target="_blank" aria-current="page" href="https://iescinoc.edu.co/">ies
+                            cinoc</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page">nosotros</a>
+                        <a class="nav-link" aria-current="page">nosotros</a>
                     </li>
                 </ul>
 
                 <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modallogin">
-login
-</button>
+                    login
+                </button>
             </div>
         </div>
     </nav>
+    <!-- aca termina el navbar -->
 
+    <!-- aca inica el carrucel -->
     <div class="container mt-4">
         <div id="carouselExampleAutoplaying" class="carousel slide border border-5 border-black" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carrucel">
-                    <img src="./src/img/b1.jpg" class="d-block w-100" alt="...">
+                    <img src="./src/img/b1.jpg" class="d-block w-100" alt="..." />
                 </div>
                 <div class="carousel-item carrucel">
-                    <img src="./src/img/b2.jpg" class="d-block w-100" alt="...">
+                    <img src="./src/img/b2.jpg" class="d-block w-100" alt="..." />
                 </div>
                 <div class="carousel-item carrucel">
-                    <img src="./src/img/b3.jpg" class="d-block w-100" alt="...">
+                    <img src="./src/img/b3.jpg" class="d-block w-100" alt="..." />
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
+    <!-- aca termina el carrucel -->
+
+    <!-- aca inicia el primer texto -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-10 col-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum magnam dolore? Consequatur perspiciatis, amet adipisci voluptates vitae distinctio nesciunt tempore quidem autem assumenda dolorem consectetur voluptate blanditiis quisquam aliquam.
+                <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos commodi beatae ducimus ad id. Eligendi deserunt ratione corporis voluptas beatae amet. Possimus reiciendis nam quaerat? Ipsam tempora fugit necessitatibus saepe?
+                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi praesentium vitae perspiciatis ipsa architecto. Porro suscipit molestias hic consequuntur, ea quidem sunt praesentium officiis saepe quod accusamus ut. Dignissimos,
+                minima!
+                <br> Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+                comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line
+                of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum
+                et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </div>
+            <div class="col-md-2 col-12 align-self-center">
+                <div class="d-grid gap-2">
+                    <button id="modal1" class="btn btn-primary btn-lg">modal</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- aca termina el prmer texto -->
+
+
+    <!-- aca inicia la grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-12 border border-black align-self-center">
+                <img src="./src/img/donal.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-md-6 col-12 border border-black align-self-center">
+                <img src="./src/img/homero.webp" alt="" class="w-100">
+            </div>
+            <div class="col-md-3 col-12 border border-black align-self-center">
+                <img src="./src/img/miky.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-md-1 col-12 border border-black align-self-center">
+                <img src="./src/img/pajaro.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+    <!-- aca termina la grid -->
+
+
+    <!-- aca inicia el texto 2 -->
+
+    <div class="container mt-4">
+        <p class="text-center texto2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque error corrupti minima consequuntur accusantium iure possimus architecto sit perferendis vitae numquam, repellendus commodi magnam molestias expedita quia totam minus? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Corporis accusantium tempora fugit debitis itaque dolores fugiat numquam! Incidunt rem iure velit dignissimos, ex quibusdam atque eaque corporis animi cumque id! Incidunt, praesentium beatae autem
+            quas ea, voluptatum rerum pariatur ut impedit, sunt sed. Recusandae et expedita aliquam quia nisi perferendis nulla libero tempore ipsum consequatur vero consequuntur voluptatem, iure iusto! Labore nobis rerum maxime culpa, doloribus commodi
+            ullam fugit saepe accusantium explicabo. Velit ipsa, omnis facere recusandae esse illo ullam commodi veniam iusto quisquam iste, doloremque mollitia sed necessitatibus adipisci. Ratione fuga aut facere provident incidunt eum veritatis quis
+            maxime hic impedit neque sunt, quae porro! Perspiciatis exercitationem eaque inventore esse necessitatibus, rem eligendi iste saepe sapiente ex autem recusandae. Odit doloremque repudiandae earum, maiores, rem pariatur sapiente optio est,
+            aut temporibus eius quidem! Veniam sint ducimus amet maxime necessitatibus assumenda repellat nobis autem et officia dolorum accusamus, nam incidunt. Ducimus nostrum nesciunt fugit aut ad nam deleniti sed temporibus praesentium, dolorem recusandae.
+            Nesciunt laborum temporibus id ullam cum perspiciatis, molestiae iure, in rem ipsam totam quibusdam sapiente, natus tenetur! Obcaecati veniam cupiditate praesentium architecto quas cum aliquid earum illo ipsum quidem iusto nam corporis, voluptate,
+            exercitationem eum. Odio ratione deleniti illum nulla possimus excepturi nostrum atque quia corporis? Repellat? Laborum aliquam, perferendis mollitia aliquid consequuntur autem, quod quo assumenda voluptate ipsa tempora. Hic numquam, quod
+            laudantium voluptas nihil tempore deserunt corporis impedit magni fuga, rerum eius. Ipsam, assumenda sequi. Repudiandae sit aliquid illo, voluptatem officia labore pariatur modi repellat accusamus sequi doloremque placeat omnis repellendus?
+            Alias, ipsum explicabo asperiores consectetur laudantium, id rem accusantium facere praesentium doloremque expedita similique? Ullam, expedita eos! In earum pariatur aspernatur voluptatum tenetur numquam? Illum, maxime error culpa nam consequuntur
+            doloremque delectus quas distinctio qui expedita soluta, voluptatum modi iusto est sit, porro dolorem?
+        </p>
+    </div>
+    <!-- aca finaliza el texto 2 -->
+
+
+    <!-- aca inica las card -->
+    <div class="container">
+        <div class="card-group">
+            <div class="card mx-2 border border-black" style="max-width: 18rem;">
+                <img src="./src/img/pajaro.jpg" class="card-img-top w-10" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card mx-2 border border-black" style="max-width: 18rem;">
+                <img src="./src/img/homero.webp" class="card-img-top w-10" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card mx-2 border border-black" style="max-width: 36rem;">
+                <img src="./src/img/miky.jpg" class="card-img-top w-10" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
 
 
 
+    <!-- aca finaliza las cads -->
 
 
+    <!-- aca inicia el fotter -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <span>
+                <svg id="icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M365.5 265.4C365.5 243.3 349.9 231.1 322.5 231.1L272.1 231.1L272.1 302.3L314.6 302.3C347.4 302.2 365.5 289 365.5 265.4zM549 252.6C539.5 221.7 538.1 183.8 539.2 154.5C540.3 124 516.5 96 484.5 96L155.7 96C123.6 96 99.9 124.1 101 154.5C102 183.8 100.7 221.7 91.2 252.6C81.6 283.6 65.5 303.2 39 305.7L39 334.2C65.4 336.7 81.6 356.3 91.2 387.3C100.7 418.2 102.1 456.1 101 485.4C99.9 515.9 123.7 543.9 155.7 543.9L484.4 543.9C516.5 543.9 540.2 515.8 539.1 485.4C538.1 456.1 539.4 418.2 548.9 387.3C558.5 356.3 574.6 336.7 601 334.2L601 305.7C574.7 303.2 558.5 283.6 549 252.6zM332.2 439.1L234.3 439.1L234.3 200.8L331.7 200.8C375 200.8 403.4 224.2 403.4 260.2C403.4 285.5 384.3 308.1 359.9 312L359.9 313.3C393.1 316.9 415.4 339.9 415.4 371.6C415.4 413.7 384.1 439.1 332.2 439.1zM322.2 330.4L272.1 330.4L272.1 408.8L324.4 408.8C358.6 408.8 376.7 395.1 376.7 369.3C376.7 343.6 358.1 330.4 322.2 330.4z"/></svg></span>
+                <p class="text-body-secondary">© 2025</p>
+            </div>
+            <div class="col mb-3"></div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- aca finaliza el footer -->
 
-
-
-
-
-
-
-
-    <!-- Modal -->
+    <!-- Modal del login-->
     <div class="modal fade" id="modallogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -103,29 +251,56 @@ login
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">CORREO ELECTRONICO</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" class="form-control" id="exampleInputPassword1" />
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
                     <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- aca termina el modal del login -->
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script>
+        /* ==========================================
+                       🔹 EVENTO: Cuando la página termina de cargar
+                       ========================================== */
+        window.addEventListener("load", () => {
+            // Esperamos 4 segundos para simular la carga
+            setTimeout(() => {
+                const loader = document.getElementById("loader"); // Referencia al div del loader
+                const contenido = document.getElementById("contenido"); // Referencia al contenido principal
+
+                // 🔸 Desvanece el loader y lo oculta
+                loader.style.opacity = "0";
+                loader.style.visibility = "hidden";
+
+                // 🔸 Muestra el contenido principal
+                contenido.classList.add("mostrar");
+
+                // 🔸 Habilita el desplazamiento del cuerpo
+                document.body.style.overflow = "auto";
+            }, 4000); // Tiempo en milisegundos (4 segundos)
+        });
+    </script>
 </body>
 
 </html>
